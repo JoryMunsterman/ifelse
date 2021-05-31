@@ -1,10 +1,15 @@
 package basic.novi;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        int year = 2004;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Geef een jaar op" );
+
+        int year = input.nextInt();
         boolean isLeapYear = year % 4 ==0;
 
         if (isLeapYear) {
@@ -12,5 +17,6 @@ public class Main {
         } else {
             System.out.println("Het jaar " + year + " is geen schrikkeljaar");
         }
+
     }
 }
